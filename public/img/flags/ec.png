@@ -1,0 +1,966 @@
+<template>
+    <section class="section-all" >
+    <Toast position="top-right" />
+            <div class="main-wrapper">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb-bar">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 col-12">
+                                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><nuxt-link to="/patient/patientdashboard">Home</nuxt-link></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Electronic Health Records</li>
+                                    </ol>
+                                </nav>
+                                <h2 class="breadcrumb-title">EHR</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Breadcrumb -->
+                
+                <!-- Page Content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                        
+                            <!-- Profile Sidebar -->
+                            <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+                                <div class="profile-sidebar">
+                                    <div class="widget-profile pro-widget-content">
+                                        <div class="profile-info-widget">
+                                            <a href="#" class="booking-doc-img">
+                                                <img src="~/assets/img/patients/patient.jpg" alt="User Image">
+                                            </a>
+                                            <div class="profile-det-info">
+                                                <h3>Takeo Fukuda</h3>
+                                                <div class="patient-details">
+                                                    <h5><i class="fas fa-birthday-cake"></i> 24 Jul 1983, 38 years</h5>
+                                                    <h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-widget">
+                                        <nav class="dashboard-menu">
+                                            <ul>
+                                                <li>
+                                                    <nuxt-link to="/patient/patientdashboard">
+                                                        <i class="fas fa-columns"></i>
+                                                        <span>Dashboard</span>
+                                                    </nuxt-link>
+                                                </li>
+                                                <li>
+                                                    <nuxt-link to="/patient/patientsearchdoctor">
+                                                        <i class="fas fa-search"></i>
+                                                        <span>Find your Doctor</span>
+                                                    </nuxt-link>
+                                                </li>
+                                                <li>
+                                                    <nuxt-link to="/patient/patientfamilymember">
+                                                        <i class="fas fa-person-booth"></i>
+                                                        <span>Family Member</span>
+                                                    </nuxt-link>
+                                                </li>
+                                                <li>
+                                                    <nuxt-link to="/patient/patientchat">
+                                                        <i class="fas fa-comments"></i>
+                                                        <span>Chat</span>
+                                                        <small class="unread-msg">23</small>
+                                                    </nuxt-link>
+                                                </li>
+                                                <li>
+                                                    <nuxt-link to="/patient/patienttreatplan">
+                                                        <i class="icofont icofont-calendar"></i>
+                                                        <span>Calendar</span>
+                                                    </nuxt-link>
+                                                </li>
+                                                <li>
+                                                    <nuxt-link to="/patient/patientprofilesetting">
+                                                        <i class="fas fa-user-cog"></i>
+                                                        <span>My Profile</span>
+                                                    </nuxt-link>
+                                                </li>
+                                                <li class="active">
+                                                    <nuxt-link to="/patient/patientEHR">
+                                                        <i class="icofont icofont-medical-sign"></i>
+                                                        <span>My Clinical History</span>
+                                                    </nuxt-link>
+                                                </li>
+                                                <li>
+                                                    <nuxt-link to="/patient/patientchangepassword">
+                                                        <i class="fas fa-lock"></i>
+                                                        <span>Change Password</span>
+                                                    </nuxt-link>
+                                                </li>
+                                                <li>
+                                                    <nuxt-link to="/patient/patientdashboard">
+                                                        <i class="fas fa-sign-out-alt"></i>
+                                                        <span>Logout</span>
+                                                    </nuxt-link>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /Profile Sidebar -->
+                            
+                            <div class="col-md-7 col-lg-8 col-xl-9">
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <!-- My Profiles Form -->
+                                        <form>
+                                            <div class="row form-row">
+                                                <div class="col-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <div class="change-avatar">
+                                                            <div class="profile-img">
+                                                                <img src="~/assets/img/patients/patient.jpg" alt="User Image">
+                                                            </div>
+                                                            <div class="upload-img">
+                                                                <div class="change-photo-btn">
+                                                                    <span><i class="fa fa-upload"></i> Upload Photo</span>
+                                                                    <input type="file" class="upload">
+                                                                </div>
+                                                                <small class="form-text text-muted">Allowed JPG, GIF or PNG. Max size of 2MB</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>First Name</label>
+                                                        <input type="text" class="form-control" value="Takeo">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Last Name</label>
+                                                        <input type="text" class="form-control" value="Fukuda">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>ID</label>
+                                                        <input type="text" class="form-control" value="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Address</label>
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="Email" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Emergency Contact Information</label>
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Date of Birth</label>
+                                                        <div class="cal-icon">
+                                                            <input type="text" class="form-control datetimepicker datepicker" id="datepicker" value="24-07-1983">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Gender</label>
+                                                        <select class="form-control select">
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Weight (kg)</label>
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Health Condition</label>
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Profession</label>
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Surgeries been through</label>
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Surgeries been through</label>
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Allergies (medication, food, environment)</label>
+                                                        <input type="text" value="" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                    <label>Medical history</label>
+                                                        <textarea type="text" class="form-control h-150" value=""></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 dropzone-b mb-20">
+                                                    <div class="form-group dropzone-b">
+                                                        <label>Medical Images</label>
+                                                    </div>
+                                                    <div class="upload-wrap">
+                                                        <div class="upload-images">
+                                                            <img src="~/assets/img/features/feature-01.jpg" alt="Upload Image">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="far fa-trash-alt fw"></i></a>
+                                                        </div>
+                                                        <div class="upload-images">
+                                                            <img src="~/assets/img/features/feature-02.jpg" alt="Upload Image">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="far fa-trash-alt fw"></i></a>
+                                                        </div>
+                                                        <div class="upload-images">
+                                                            <img src="~/assets/img/features/feature-02.jpg" alt="Upload Image">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm"><i class="far fa-trash-alt fw"></i></a>
+                                                        </div>
+                                                        <div class="signature-wrap upload-images">
+                                                            <div class="signature"><i class="icofont icofont-plus-circle add-image"></i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Current Medication (Medication List) - Standarized Vademecum</label>
+                                                        <textarea type="text" class="form-control h-150" value=""></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Symptoms and visit reason</label>
+                                                        <textarea type="text" class="form-control h-150" value="" required></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Family Medical History</label>
+                                                        <textarea type="text" class="form-control h-150" value="" placeholder="Are there any hereditary or genetic conditions in your family? Family history diseases (e.g., heart disease, cancer , diabetes, etc.)"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Do You Smoke?</label>
+                                                        <select class="form-control select">
+                                                            <option>Yes</option>
+                                                            <option>No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Decribe your regular exercise routine.</label>
+                                                        <textarea type="text" class="form-control h-150" value=""></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Describe your typical daily diet.</label>
+                                                        <textarea type="text" class="form-control h-150" value=""></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Review of Systems (ros)</label>
+                                                        <textarea type="text" class="form-control h-150" value="" placeholder="Issues or concerns to discuss in the visit"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 dropzone-b mb-20">
+                                                    <div class="form-group dropzone-b">
+                                                        <label>Are you experiencing symptoms at these areas of the body?</label>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-2 col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Cardiovascular</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Respiratory</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Gastointrestinal</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Musculoeskeletal</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Nervous</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Integumentary (skin)</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Endocrine</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Genitourinary</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Hematologic/lymphatic</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Immunologic/allergic</label>
+                                                                <select class="form-control select">
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Please, indicate the symptomsor concerns taht you are experiencing.</label>
+                                                        <textarea type="text" class="form-control h-150" value="" placeholder="When did they start? &#10;Have you sought medical attention for these symptoms?"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Health Goals (set update health goals)</label>
+                                                        <textarea type="text" class="form-control h-150" value="" placeholder="Did you have any specific health goals or concerns that you'd like to address during this visit?"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Vaccination Records</label>
+                                                        <textarea type="text" class="form-control h-150" value="" placeholder="List the vaccines you've received and the dates.&#10;Are there any vaccines you believe you need or have concerns about? "></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 dropzone-b mb-20">
+                                                    <div class="form-group dropzone-b">
+                                                        <label>Women's health (for female patients)</label>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4 col-md-4">
+                                                            <div class="form-group">
+                                                                <textarea type="text" class="form-control h-150" value="" placeholder="Menstrual history (date of last menstrual period, regularity, any issues)"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 col-md-4">
+                                                            <div class="form-group">
+                                                                <textarea type="text" class="form-control h-150" value="" placeholder="pregnancy history (if applicable)"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 col-md-4">
+                                                            <div class="form-group">
+                                                                <textarea type="text" class="form-control h-150" value="" placeholder="contraceptive methods (if applicable)"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 dropzone-b mb-20">
+                                                    <div class="form-group dropzone-b">
+                                                        <label>Behavioral health</label>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6 col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Can you share your history of mental health conditions or treatment?</label>
+                                                                <textarea type="text" class="form-control h-150" value="" placeholder="(if applicable)"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Current emotional well-being - how do you feel? </label>
+                                                                <textarea type="text" class="form-control h-150" value="" placeholder="normal, disgust, Angry, Sad, Fear, Surprised, happy"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Patient Notes / Additional notes</label>
+                                                        <textarea type="text" class="form-control h-150" value="" placeholder="Is there anything else you would like to add or discuss with your healthcare professional? "></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-section fr">
+                                                <a class="btn btn-primary submit-btn fw">Export to PDF</a>
+                                            </div>
+                                            <div class="submit-section fr">
+                                                <button type="submit" class="btn btn-primary submit-btn">Save Changes</button>
+                                            </div>
+                                        </form>
+                                        <!-- /My Profiles Form -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>		
+                <!-- /Page Content -->
+        </div>
+    </section>
+</template>
+
+<script>
+export default {
+    name: 'PatientProfileSetting',
+    components: {     
+    },
+    mounted() {
+        $("#datepicker").datepicker();
+
+        var Datepicker = function(element, options){
+            this.element = $(element);
+            this.format = DPGlobal.parseFormat(options.format||this.element.data('date-format')||'mm/dd/yyyy');
+            this.picker = $(DPGlobal.template)
+                                .appendTo('body')
+                                .on({
+                                    click: $.proxy(this.click, this)//,
+                                    //mousedown: $.proxy(this.mousedown, this)
+                                });
+            this.isInput = this.element.is('input');
+            this.component = this.element.is('.date') ? this.element.find('.add-on') : false;
+            
+            if (this.isInput) {
+                this.element.on({
+                    focus: $.proxy(this.show, this),
+                    //blur: $.proxy(this.hide, this),
+                    keyup: $.proxy(this.update, this)
+                });
+            } else {
+                if (this.component){
+                    this.component.on('click', $.proxy(this.show, this));
+                } else {
+                    this.element.on('click', $.proxy(this.show, this));
+                }
+            }
+        
+            this.minViewMode = options.minViewMode||this.element.data('date-minviewmode')||0;
+            if (typeof this.minViewMode === 'string') {
+                switch (this.minViewMode) {
+                    case 'months':
+                        this.minViewMode = 1;
+                        break;
+                    case 'years':
+                        this.minViewMode = 2;
+                        break;
+                    default:
+                        this.minViewMode = 0;
+                        break;
+                }
+            }
+            this.viewMode = options.viewMode||this.element.data('date-viewmode')||0;
+            if (typeof this.viewMode === 'string') {
+                switch (this.viewMode) {
+                    case 'months':
+                        this.viewMode = 1;
+                        break;
+                    case 'years':
+                        this.viewMode = 2;
+                        break;
+                    default:
+                        this.viewMode = 0;
+                        break;
+                }
+            }
+            this.startViewMode = this.viewMode;
+            this.weekStart = options.weekStart||this.element.data('date-weekstart')||0;
+            this.weekEnd = this.weekStart === 0 ? 6 : this.weekStart - 1;
+            this.onRender = options.onRender;
+            this.fillDow();
+            this.fillMonths();
+            this.update();
+            this.showMode();
+        };
+        
+        Datepicker.prototype = {
+            constructor: Datepicker,
+            
+            show: function(e) {
+                this.picker.show();
+                this.height = this.component ? this.component.outerHeight() : this.element.outerHeight();
+                this.place();
+                $(window).on('resize', $.proxy(this.place, this));
+                if (e ) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                }
+                if (!this.isInput) {
+                }
+                var that = this;
+                $(document).on('mousedown', function(ev){
+                    if ($(ev.target).closest('.datepicker').length == 0) {
+                        that.hide();
+                    }
+                });
+                this.element.trigger({
+                    type: 'show',
+                    date: this.date
+                });
+            },
+            
+            hide: function(){
+                this.picker.hide();
+                $(window).off('resize', this.place);
+                this.viewMode = this.startViewMode;
+                this.showMode();
+                if (!this.isInput) {
+                    $(document).off('mousedown', this.hide);
+                }
+                //this.set();
+                this.element.trigger({
+                    type: 'hide',
+                    date: this.date
+                });
+            },
+            
+            set: function() {
+                var formated = DPGlobal.formatDate(this.date, this.format);
+                if (!this.isInput) {
+                    if (this.component){
+                        this.element.find('input').prop('value', formated);
+                    }
+                    this.element.data('date', formated);
+                } else {
+                    this.element.prop('value', formated);
+                }
+            },
+            
+            setValue: function(newDate) {
+                if (typeof newDate === 'string') {
+                    this.date = DPGlobal.parseDate(newDate, this.format);
+                } else {
+                    this.date = new Date(newDate);
+                }
+                this.set();
+                this.viewDate = new Date(this.date.getFullYear(), this.date.getMonth(), 1, 0, 0, 0, 0);
+                this.fill();
+            },
+            
+            place: function(){
+                var offset = this.component ? this.component.offset() : this.element.offset();
+                this.picker.css({
+                    top: offset.top + this.height,
+                    left: offset.left
+                });
+            },
+            
+            update: function(newDate){
+                this.date = DPGlobal.parseDate(
+                    typeof newDate === 'string' ? newDate : (this.isInput ? this.element.prop('value') : this.element.data('date')),
+                    this.format
+                );
+                this.viewDate = new Date(this.date.getFullYear(), this.date.getMonth(), 1, 0, 0, 0, 0);
+                this.fill();
+            },
+            
+            fillDow: function(){
+                var dowCnt = this.weekStart;
+                var html = '<tr>';
+                while (dowCnt < this.weekStart + 7) {
+                    html += '<th class="dow">'+DPGlobal.dates.daysMin[(dowCnt++)%7]+'</th>';
+                }
+                html += '</tr>';
+                this.picker.find('.datepicker-days thead').append(html);
+            },
+            
+            fillMonths: function(){
+                var html = '';
+                var i = 0
+                while (i < 12) {
+                    html += '<span class="month">'+DPGlobal.dates.monthsShort[i++]+'</span>';
+                }
+                this.picker.find('.datepicker-months td').append(html);
+            },
+            
+            fill: function() {
+                var d = new Date(this.viewDate),
+                    year = d.getFullYear(),
+                    month = d.getMonth(),
+                    currentDate = this.date.valueOf();
+                this.picker.find('.datepicker-days th:eq(1)')
+                            .text(DPGlobal.dates.months[month]+' '+year);
+                var prevMonth = new Date(year, month-1, 28,0,0,0,0),
+                    day = DPGlobal.getDaysInMonth(prevMonth.getFullYear(), prevMonth.getMonth());
+                prevMonth.setDate(day);
+                prevMonth.setDate(day - (prevMonth.getDay() - this.weekStart + 7)%7);
+                var nextMonth = new Date(prevMonth);
+                nextMonth.setDate(nextMonth.getDate() + 42);
+                nextMonth = nextMonth.valueOf();
+                var html = [];
+                var clsName,
+                    prevY,
+                    prevM;
+                while(prevMonth.valueOf() < nextMonth) {
+                    if (prevMonth.getDay() === this.weekStart) {
+                        html.push('<tr>');
+                    }
+                    clsName = this.onRender(prevMonth);
+                    prevY = prevMonth.getFullYear();
+                    prevM = prevMonth.getMonth();
+                    if ((prevM < month &&  prevY === year) ||  prevY < year) {
+                        clsName += ' old';
+                    } else if ((prevM > month && prevY === year) || prevY > year) {
+                        clsName += ' new';
+                    }
+                    if (prevMonth.valueOf() === currentDate) {
+                        clsName += ' active';
+                    }
+                    html.push('<td class="day '+clsName+'">'+prevMonth.getDate() + '</td>');
+                    if (prevMonth.getDay() === this.weekEnd) {
+                        html.push('</tr>');
+                    }
+                    prevMonth.setDate(prevMonth.getDate()+1);
+                }
+                this.picker.find('.datepicker-days tbody').empty().append(html.join(''));
+                var currentYear = this.date.getFullYear();
+                
+                var months = this.picker.find('.datepicker-months')
+                            .find('th:eq(1)')
+                                .text(year)
+                                .end()
+                            .find('span').removeClass('active');
+                if (currentYear === year) {
+                    months.eq(this.date.getMonth()).addClass('active');
+                }
+                
+                html = '';
+                year = parseInt(year/10, 10) * 10;
+                var yearCont = this.picker.find('.datepicker-years')
+                                    .find('th:eq(1)')
+                                        .text(year + '-' + (year + 9))
+                                        .end()
+                                    .find('td');
+                year -= 1;
+                for (var i = -1; i < 11; i++) {
+                    html += '<span class="year'+(i === -1 || i === 10 ? ' old' : '')+(currentYear === year ? ' active' : '')+'">'+year+'</span>';
+                    year += 1;
+                }
+                yearCont.html(html);
+            },
+            
+            click: function(e) {
+                e.stopPropagation();
+                e.preventDefault();
+                var target = $(e.target).closest('span, td, th');
+                if (target.length === 1) {
+                    switch(target[0].nodeName.toLowerCase()) {
+                        case 'th':
+                            switch(target[0].className) {
+                                case 'switch':
+                                    this.showMode(1);
+                                    break;
+                                case 'prev':
+                                case 'next':
+                                    this.viewDate['set'+DPGlobal.modes[this.viewMode].navFnc].call(
+                                        this.viewDate,
+                                        this.viewDate['get'+DPGlobal.modes[this.viewMode].navFnc].call(this.viewDate) + 
+                                        DPGlobal.modes[this.viewMode].navStep * (target[0].className === 'prev' ? -1 : 1)
+                                    );
+                                    this.fill();
+                                    this.set();
+                                    break;
+                            }
+                            break;
+                        case 'span':
+                            if (target.is('.month')) {
+                                var month = target.parent().find('span').index(target);
+                                this.viewDate.setMonth(month);
+                            } else {
+                                var year = parseInt(target.text(), 10)||0;
+                                this.viewDate.setFullYear(year);
+                            }
+                            if (this.viewMode !== 0) {
+                                this.date = new Date(this.viewDate);
+                                this.element.trigger({
+                                    type: 'changeDate',
+                                    date: this.date,
+                                    viewMode: DPGlobal.modes[this.viewMode].clsName
+                                });
+                            }
+                            this.showMode(-1);
+                            this.fill();
+                            this.set();
+                            break;
+                        case 'td':
+                            if (target.is('.day') && !target.is('.disabled')){
+                                var day = parseInt(target.text(), 10)||1;
+                                var month = this.viewDate.getMonth();
+                                if (target.is('.old')) {
+                                    month -= 1;
+                                } else if (target.is('.new')) {
+                                    month += 1;
+                                }
+                                var year = this.viewDate.getFullYear();
+                                this.date = new Date(year, month, day,0,0,0,0);
+                                this.viewDate = new Date(year, month, Math.min(28, day),0,0,0,0);
+                                this.fill();
+                                this.set();
+                                this.element.trigger({
+                                    type: 'changeDate',
+                                    date: this.date,
+                                    viewMode: DPGlobal.modes[this.viewMode].clsName
+                                });
+                            }
+                            break;
+                    }
+                }
+            },
+            
+            mousedown: function(e){
+                e.stopPropagation();
+                e.preventDefault();
+            },
+            
+            showMode: function(dir) {
+                if (dir) {
+                    this.viewMode = Math.max(this.minViewMode, Math.min(2, this.viewMode + dir));
+                }
+                this.picker.find('>div').hide().filter('.datepicker-'+DPGlobal.modes[this.viewMode].clsName).show();
+            }
+        };
+        
+        $.fn.datepicker = function ( option, val ) {
+            return this.each(function () {
+                var $this = $(this),
+                    data = $this.data('datepicker'),
+                    options = typeof option === 'object' && option;
+                if (!data) {
+                    $this.data('datepicker', (data = new Datepicker(this, $.extend({}, $.fn.datepicker.defaults,options))));
+                }
+                if (typeof option === 'string') data[option](val);
+            });
+        };
+
+        $.fn.datepicker.defaults = {
+            onRender: function(date) {
+                return '';
+            }
+        };
+        $.fn.datepicker.Constructor = Datepicker;
+        
+        var DPGlobal = {
+            modes: [
+                {
+                    clsName: 'days',
+                    navFnc: 'Month',
+                    navStep: 1
+                },
+                {
+                    clsName: 'months',
+                    navFnc: 'FullYear',
+                    navStep: 1
+                },
+                {
+                    clsName: 'years',
+                    navFnc: 'FullYear',
+                    navStep: 10
+            }],
+            dates:{
+                days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+                daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+                months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+            },
+            isLeapYear: function (year) {
+                return (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0))
+            },
+            getDaysInMonth: function (year, month) {
+                return [31, (DPGlobal.isLeapYear(year) ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month]
+            },
+            parseFormat: function(format){
+                var separator = format.match(/[.\/\-\s].*?/),
+                    parts = format.split(/\W+/);
+                if (!separator || !parts || parts.length === 0){
+                    throw new Error("Invalid date format.");
+                }
+                return {separator: separator, parts: parts};
+            },
+            parseDate: function(date, format) {
+                var parts = date.split(format.separator),
+                    date = new Date(),
+                    val;
+                date.setHours(0);
+                date.setMinutes(0);
+                date.setSeconds(0);
+                date.setMilliseconds(0);
+                if (parts.length === format.parts.length) {
+                    var year = date.getFullYear(), day = date.getDate(), month = date.getMonth();
+                    for (var i=0, cnt = format.parts.length; i < cnt; i++) {
+                        val = parseInt(parts[i], 10)||1;
+                        switch(format.parts[i]) {
+                            case 'dd':
+                            case 'd':
+                                day = val;
+                                date.setDate(val);
+                                break;
+                            case 'mm':
+                            case 'm':
+                                month = val - 1;
+                                date.setMonth(val - 1);
+                                break;
+                            case 'yy':
+                                year = 2000 + val;
+                                date.setFullYear(2000 + val);
+                                break;
+                            case 'yyyy':
+                                year = val;
+                                date.setFullYear(val);
+                                break;
+                        }
+                    }
+                    date = new Date(year, month, day, 0 ,0 ,0);
+                }
+                return date;
+            },
+            formatDate: function(date, format){
+                var val = {
+                    d: date.getDate(),
+                    m: date.getMonth() + 1,
+                    yy: date.getFullYear().toString().substring(2),
+                    yyyy: date.getFullYear()
+                };
+                val.dd = (val.d < 10 ? '0' : '') + val.d;
+                val.mm = (val.m < 10 ? '0' : '') + val.m;
+                var date = [];
+                for (var i=0, cnt = format.parts.length; i < cnt; i++) {
+                    date.push(val[format.parts[i]]);
+                }
+                return date.join(format.separator);
+            },
+            headTemplate: '<thead>'+
+                                '<tr>'+
+                                    '<th class="prev">&lsaquo;</th>'+
+                                    '<th colspan="5" class="switch"></th>'+
+                                    '<th class="next">&rsaquo;</th>'+
+                                '</tr>'+
+                            '</thead>',
+            contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>'
+        };
+        DPGlobal.template = '<div class="datepicker dropdown-menu">'+
+                                '<div class="datepicker-days">'+
+                                    '<table class=" table-condensed">'+
+                                        DPGlobal.headTemplate+
+                                        '<tbody></tbody>'+
+                                    '</table>'+
+                                '</div>'+
+                                '<div class="datepicker-months">'+
+                                    '<table class="table-condensed">'+
+                                        DPGlobal.headTemplate+
+                                        DPGlobal.contTemplate+
+                                    '</table>'+
+                                '</div>'+
+                                '<div class="datepicker-years">'+
+                                    '<table class="table-condensed">'+
+                                        DPGlobal.headTemplate+
+                                        DPGlobal.contTemplate+
+                                    '</table>'+
+                                '</div>'+
+                            '</div>';
+    }
+}
+</script>
+
+<style >
+.add-image{
+    font-size: 30px !important;
+    color:#1A76D1 !important;
+}
+.btn-sm{
+    position:relative !important;
+    /* background:#1A76D1 !important; */
+}
+.fw{
+    color:white !important;
+}
+.dropzone-b {
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.1) !important;
+    /* border-bottom: dashed; */
+}
+.mb-20{
+    margin-bottom: 20px !imp

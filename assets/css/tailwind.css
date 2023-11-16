@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  @font-face {
+    font-family: "Muli";
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Muli"), url('/fonts/muli/Muli.ttf');
+    ;
+  }
+  html, body{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Muli';
+  } 
+
+ 
+}
+.swiper-wrapper{
+  @apply h-[53.9rem] !important
+}
+
+.swiper-pagination {
+  position: unset !important;
+  padding: 3rem 0 !important;
+}
+  .swiper-pagination-bullet {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    opacity: 1;
+    background: #FFFFFF !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    /* color: #fff;
+    background: #007aff; */
+  }
