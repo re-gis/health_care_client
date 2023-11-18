@@ -158,46 +158,46 @@
 
     <!-- Start Fun-facts -->
     <div id="fun-facts" class="fun-facts section clients overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
+        <div class="flex items-center justify-around w-[100%]">
+            <div class="flex w-[80%] gap-10 justify-between">
+                <div class="col-lg-3 col-md-6 col-12 w-[25%]">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
                         <i class="icofont icofont-doctor"></i>
-                        <div class="content">
+                        <div class="content pl-[80px]">
                             <span class="counter">4319</span>
                             <p>licensed<br>Medical Practitioners</p>
                         </div>
                     </div>
                     <!-- End Single Fun -->
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 w-[25%]">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
                         <i class="icofont-drug"></i>
-                        <div class="content">
+                        <div class="content pl-[80px]">
                             <span class="counter">1650</span>
                             <p>licensed<br>Parmacist List</p>
                         </div>
                     </div>
                     <!-- End Single Fun -->
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 w-[25%]">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
                         <i class="icofont icofont-nurse-alt"></i>
-                        <div class="content">
+                        <div class="content pl-[80px]">
                             <span class="counter">6583</span>
                             <p>licensed<br>Nurse List</p>
                         </div>
                     </div>
                     <!-- End Single Fun -->
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 w-[25%]">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
                         <i class="icofont icofont-tooth"></i>
-                        <div class="content">
+                        <div class="content pl-[80px]">
                             <span class="counter">1112</span>
                             <p>licensed<br>Dental Practitioners</p>
                         </div>
@@ -216,7 +216,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-12">
-						<div class="content">
+						<div class="content pl-[80px]">
 							<h2>Do you need Emergency Medical Care?</h2>
 							<p>The Emergency Medical Services are highly responsive to all emergency calls and requests. Simply dial the toll-free number 999 from any phone to call for ambulance services.</p>
                             <p>You can also have a 1:1 E-conference call to an  available doctor.</p>
@@ -250,7 +250,7 @@
                                     <img src="/img/login-slider-img-3.png" alt="#">
                                 </div>
                                 <div class="news-body">
-                                    <div class="news-content">
+                                    <div class="news-content pl-[80px]">
                                         <div class="date">licensed DOCTORS</div>
                                         <h2 class="text-center"><a href="#">Book an online in-person appointment with a Doctor</a></h2>
                                         <p class="text  text-center block-center" >LDermatologists. Dentists. Psychologists. Psychiatrists. Pohthalmologists. Orthopaedic surgenons. Urologists. Obstetricians-gynecologists. Otolaryngologists. Vascular surgeons. Allergists.</p>
@@ -266,7 +266,7 @@
                                     <img src="/img/login-slider-img-1.png" alt="#">
                                 </div>
                                 <div class="news-body">
-                                    <div class="news-content">
+                                    <div class="news-content pl-[80px]">
                                         <div class="date">HIGHT TECHNOLOGY</div>
                                         <h2 class="text-center"><a href="#">Asking a doctor a Medical query has never been so easy!</a></h2>
                                         <p class="text  text-center block-center" >24/7 Access</p>
@@ -282,7 +282,7 @@
                                     <img src="/img/login-slider-img-2.png" alt="#">
                                 </div>
                                 <div class="news-body">
-                                    <div class="news-content">
+                                    <div class="news-content pl-[80px]">
                                         <div class="date">100% SAFE</div>
                                         <h2 class="text-center"><a href="#">Instant Access to Thousands of Trusted Doctors!</a></h2>
                                         <p class="text  text-center block-center" >Encrypted to Secure your Privacy and security and your family</p>

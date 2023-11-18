@@ -1,6 +1,6 @@
 <template>
     <section class="why-choose section" >
-        <div class="container">
+        <div class="w-[1250px]">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
