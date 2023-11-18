@@ -18,72 +18,89 @@
     <!-- <BannerBody /> -->
     <ScheduleBody />
     <!-- Start service -->
-    <section class="services section">
-        <div class="container">
+    <section class="services w-[100%] flex flex-col justify-center items-center section">
+        <div class="w-[1250px] flex flex-col justify-center">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">
+                    <div class="section-title text-center">
                         <h2>Why Doctor IN-HOME?</h2>
                         <img src="/img/section-img.png" alt="#">
                         <p>“Embark on a healthcare journey like never before with our cutting-edge telehealth services. Designed to cover the unmet needs of real patients, our platform ensures integrated care, offering comprehensive coverage to the entire population of Bahrain. With a specialized focus on pathology-grouped patients, we provide tailored solutions to prioritize your well-being. Welcome to the future of healthcare, where quality care is accessible and personalized. Join us today for a healthier tomorrow”</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="icofont-duotone icofont-heart-eyes"></i>
-                        <h4><a href="service-details.html">Designed to cover unmet needs of real patients:</a></h4>
-                        <p>“we provide personalized healthcare”</p>	
-                    </div>
-                    <!-- End Single Service -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="icofont-duotone icofont-support"></i>
-                        <h4><a href="service-details.html">Designed to support integrated chain of care:</a></h4>
-                        <p>“we help boost self-referral of patients to specialists”</p>	
-                    </div>
-                    <!-- End Single Service -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="icofont-duotone icofont-users"></i>
-                        <h4><a href="service-details.html">Designed to cover the full population of Bahrain:</a></h4>
-                        <p>“we provide a tested service of care scalable and secure”</p>	
-                    </div>
-                    <!-- End Single Service -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="icofont icofont-prescription"></i>
-                        <h4><a href="service-details.html">Designed to avoid waiting lists and uncertainty:</a></h4>
-                        <p>“we link patients, health providers, caregivers, caretakers and family” </p>	
-                    </div>
-                    <!-- End Single Service -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="icofont icofont-stopwatch"></i>
-                        <h4><a href="service-details.html">Designed to attend in-time:</a></h4>
-                        <p>“we permit in-time and coordinated intervention”</p>	
-                    </div>
-                    <!-- End Single Service -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Service -->
-                    <div class="single-service">
-                        <i class="icofont-duotone icofont-ui-user-group"></i>
-                        <h4><a href="service-details.html">Designed with pathology grouped patients:</a></h4>
-                        <p>“we attend by clusters of patients”</p>	
-                    </div>
-                    <!-- End Single Service -->
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+    <!-- Start Single Service -->
+    <div class="single-service">
+      <i class="icofont-duotone icofont-heart-eyes"></i>
+      <div class="ml-4">
+        <h4 class=" font-[500] text-[15px]"><a href="service-details.html">Designed to cover unmet needs of real patients:</a></h4>
+        <p class="text-sm">“we provide personalized healthcare”</p>
+      </div>
+    </div>
+    <!-- End Single Service -->
+  </div>
+
+  <div class="col-span-1 md:col-span-1 lg:col-span-1">
+    <!-- Start Single Service -->
+    <div class="single-service">
+      <i class="icofont-duotone icofont-support"></i>
+      <div class="ml-4">
+        <h4 class=" font-[500] text-[15px]"><a href="service-details.html">Designed to support integrated chain of care:</a></h4>
+        <p class="text-sm">“we help boost self-referral of patients to specialists”</p>
+      </div>
+    </div>
+    <!-- End Single Service -->
+  </div>
+
+  <div class="col-span-1 md:col-span-1 lg:col-span-1">
+    <!-- Start Single Service -->
+    <div class="single-service">
+      <i class="icofont-duotone icofont-users"></i>
+      <div class="ml-4">
+        <h4 class=" font-[500] text-[15px]"><a href="service-details.html">Designed to cover the full population of Bahrain:</a></h4>
+        <p class="text-sm">“we provide a tested service of care scalable and secure”</p>
+      </div>
+    </div>
+    <!-- End Single Service -->
+  </div>
+
+  <div class="col-span-1 md:col-span-2 lg:col-span-1">
+    <!-- Start Single Service -->
+    <div class="single-service">
+      <i class="icofont icofont-prescription"></i>
+      <div class="ml-4">
+        <h4 class=" font-[500] text-[15px]"><a href="service-details.html">Designed to avoid waiting lists and uncertainty:</a></h4>
+        <p class="text-sm">“we link patients, health providers, caregivers, caretakers and family”</p>
+      </div>
+    </div>
+    <!-- End Single Service -->
+  </div>
+
+  <div class="col-span-1 md:col-span-1 lg:col-span-1">
+    <!-- Start Single Service -->
+    <div class="single-service">
+      <i class="icofont icofont-stopwatch"></i>
+      <div class="ml-4">
+        <h4 class=" font-[500] text-[15px]"><a href="service-details.html">Designed to attend in-time:</a></h4>
+        <p class="text-sm">“we permit in-time and coordinated intervention”</p>
+      </div>
+    </div>
+    <!-- End Single Service -->
+  </div>
+
+  <div class="col-span-1 md:col-span-1 lg:col-span-1">
+    <!-- Start Single Service -->
+    <div class="single-service">
+      <i class="icofont-duotone icofont-ui-user-group"></i>
+      <div class="ml-4">
+        <h4 class=" font-[500] text-[15px]"><a href="service-details.html">Designed with pathology grouped patients:</a></h4>
+        <p class="text-sm">“we attend by clusters of patients”</p>
+      </div>
+    </div>
+    <!-- End Single Service -->
+  </div>
             </div>
         </div>
     </section>

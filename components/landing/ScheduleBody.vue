@@ -1,8 +1,8 @@
 <template>
   <section class="schedule appointment">
-    <div class="container">
+    <div class="">
       <div class="schedule-inner">
-        <div class="flex flex-col md:flex-row search-all">
+        <div class="row md:flex-row search-all">
           <div class="w-full md:w-1/2 lg:w-2/3 banner-wrapper">
             <div class="banner-header text-center">
               <h1 class="shadow-search text-4xl font-bold">
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="w-[100%] flex gap-[1.71rem] justify-center">
-          <div class="col-span-12 w-[100%] md:col-span-6 lg:col-span-3">
+          <div class="col-span-12 w-[20%] md:col-span-6 lg:col-span-3">
             <div class="single-schedule">
               <div class="inner">
                 <div class="icon">
@@ -80,7 +80,7 @@
             </div>
           </div>
 
-          <div class="col-span-12 w-[100%] md:col-span-6 lg:col-span-3">
+          <div class="col-span-12 w-[20%] md:col-span-6 lg:col-span-3">
             <div class="single-schedule middle">
               <div class="inner">
                 <div class="icon">
@@ -100,7 +100,7 @@
             </div>
           </div>
 
-          <div class="col-span-12 w-[100%] md:col-span-6 lg:col-span-3">
+          <div class="col-span-12 w-[20%] md:col-span-6 lg:col-span-3">
             <div class="single-schedule middle">
               <div class="inner">
                 <div class="icon">
@@ -120,7 +120,7 @@
             </div>
           </div>
 
-          <div class="col-span-12 w-[100%] md:col-span-12 lg:col-span-6">
+          <div class="col-span-12 w-[20%] md:col-span-12 lg:col-span-6">
             <div class="single-schedule last">
               <div class="inner">
                 <div class="icon">
@@ -158,6 +158,7 @@ export default {
   position: relative;
   transform: translateY(-20%);
   z-index: 10;
+  width: 100%;
 }
 .schedule {
   background: #fff;
@@ -169,6 +170,10 @@ export default {
   position: relative;
   transform: translateY(-80%);
   z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .schedule .single-schedule {
   position: relative;
@@ -186,7 +191,7 @@ export default {
 .schedule .single-schedule .inner {
   overflow: hidden;
   position: relative;
-  padding: 30px;
+  padding:10px 30px;
   z-index: 2;
   width: 100%;
 }
@@ -297,6 +302,13 @@ export default {
 }
 .mt-0 {
   margin-top: 0px;
+}
+
+.schedule-inner .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
 }
 
 /* searchbox */

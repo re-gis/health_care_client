@@ -41,10 +41,13 @@ export default {
 
 <style>
 .search-all {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   transform: translateY(-150%);
   z-index: 10;
+  margin: 0 auto;
 }
 /* .font-blue{
     color: #1a76d1 !important;
