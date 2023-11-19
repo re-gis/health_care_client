@@ -1,8 +1,8 @@
 <template>
-    <section class="why-choose section" >
+    <section class="why-choose section flex flex-col justify-center items-center" >
         <div class="w-[1250px]">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="">
                     <div class="section-title">
                         <h2>Welcome to the future</h2>
                         <img src="/img/section-img.png" alt="#">
@@ -10,8 +10,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-12">
+            <div class="row flex flex-wrap mr-[-15px] ml-[-15px]">
+                <div class="relative w-1/2 pr-[15px] pl-[15px]">
                     <!-- Start Choose Left -->
                     <div class="choose-left">
                         <h3>Who We Are</h3>
@@ -23,7 +23,7 @@
                     </div>
                     <!-- End Choose Left -->
                 </div>
-                <div class="col-lg-6 col-12">
+                <div class="relative w-1/2 pr-[15px] pl-[15px]">
                     <!-- Start Choose Rights -->
                     <div class="choose-right">
                         <div class="video-image">
