@@ -263,7 +263,7 @@
     <div class="flex justify-center items-center text-white">
       <div class="row">
         <div class="relative w-full pr-[15px] pl-[15px]">
-          <div class="content text-center pl-[80px]">
+          <div class="content w-[1250px] text-center pl-[80px]">
             <h2>Do you need Emergency Medical Care?</h2>
             <p>
               The Emergency Medical Services are highly responsive to all
@@ -273,9 +273,9 @@
             <p>
               You can also have a 1:1 E-conference call to an available doctor.
             </p>
-            <div class="button">
-              <a href="#" class="btn">Contact Now</a>
-              <a href="#" class="btn second"
+            <div class="flex items-center justify-center">
+              <a href="#" class="btn py-[7px] px-3">Contact Now</a>
+              <a href="#" class="btn second py-[7px] px-3"
                 >Learn More<i class="fa fa-long-arrow-right"></i
               ></a>
             </div>
@@ -287,10 +287,10 @@
   <!--/ End Call to action -->
   <!-- Start Blog Area -->
   <section class="blog section" id="blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title">
+    <div class="flex flex-col justiy-content items-center">
+      <div class="flex flex-wrap mx-[-15px]">
+        <div class="relative w-[100%] py-[15px]">
+          <div class="section-title w-[1250px] block px-[250px] text-center">
             <h2>Personalised Medicine</h2>
             <img src="/img/section-img.png" alt="#" />
             <p>
@@ -303,8 +303,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-12">
+      <div class="flex gap-10 justify-center items-center flex-wrap w-[100%] mr-[-15px] ml-[-15px]">
+        <div class="w-1/4">
           <!-- Single Blog -->
           <div class="single-news">
             <div class="news-head">
@@ -329,7 +329,7 @@
           </div>
           <!-- End Single Blog -->
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="w-1/4">
           <!-- Single Blog -->
           <div class="single-news">
             <div class="news-head">
@@ -349,7 +349,7 @@
           </div>
           <!-- End Single Blog -->
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="w-1/4">
           <!-- Single Blog -->
           <div class="single-news">
             <div class="news-head">
