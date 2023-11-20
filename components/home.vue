@@ -376,7 +376,7 @@
   </section>
   <!-- End Blog Area -->
   <section class="testimonials mb-50" id="testimonials">
-    <div class="container">
+    <div class="flex flex-col justify-center">
       <div class="row">
         <div class="col-lg-12">
           <div class="section-title">
@@ -386,7 +386,7 @@
         </div>
       </div>
       <div
-        class="testimonials-slider swiper"
+        class="testimonials-slider w-[80%] swiper"
         data-aos="fade-up"
         data-aos-delay="100"
       >
@@ -484,8 +484,8 @@
   </section>
   <!-- Start clients -->
   <div class="clients overlay small-slider">
-    <div class="container">
-      <div class="row">
+    <div class="w-[100%] flex justify-center flex-col">
+      <div class="">
         <div class="col-lg-12 col-md-12 col-12">
           <div class="owl-carousel clients-slider">
             <div class="single-clients">
@@ -521,18 +521,18 @@
     </div>
   </div>
   <!--/Ens clients -->
-  <section class="why-choose section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
+  <section class="why-choose w-[100%] items-center flex flex-col justify-center section">
+    <div class="w-[85%]">
+      <div class="flex flex-wrap mx-[-15px] justify-center">
+        <div class= "w-[1250px]">
           <div class="section-title">
             <h2>Differential Services</h2>
             <img src="/img/section-img.png" alt="#" />
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6 col-12">
+      <div class="flex w-[100%] flex-wrap justify-center">
+        <div class="relative w-1/2 pr-[15px] pl-[15px]">
           <!-- Start Choose Left -->
           <div class="choose-left">
             <h3>Here are some text</h3>
@@ -566,7 +566,7 @@
           </div>
           <!-- End Choose Left -->
         </div>
-        <div class="col-lg-6 col-12">
+        <div class="relative w-1/2 pr-[15px] pl-[15px]">
           <!-- Start Choose Rights -->
           <div class="choose-right-2">
             <div class="video-image"></div>
@@ -579,10 +579,10 @@
 
   <!-- Start service -->
   <section class="services section faq section-bg" id="faq">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title">
+    <div class="w-[100%]">
+      <div class="flex flex-wrap mx-[-15px] justify-center">
+        <div class="w-[1250px]">
+          <div class="section-title w-[100%]">
             <h2>Frequently Asked Questions</h2>
             <img src="/img/section-img.png" alt="#" />
           </div>
@@ -758,9 +758,9 @@
 
   <!-- Start Newsletter Area -->
   <section class="newsletter section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-12">
+    <div class="w-[100%]">
+      <div class="flex items-center flex-wrap mx-[-15px] justify-center">
+        <div class="relative mx-[15px] w-1/2">
           <!-- Start Newsletter Form -->
           <div class="subscribe-text">
             <h6>Sign up for newsletter</h6>

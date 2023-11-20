@@ -1,11 +1,11 @@
 <template>
     <!-- Footer Area -->
-		<footer id="footer" class="footer ">
+		<footer id="footer" class="footer">
 			<!-- Footer Top -->
-			<div class="footer-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-6 col-12">
+			<div class="footer-top flex ">
+				<div class="w-[100%] py-5 px-24">
+					<div class="flex gap-10">
+						<div class="w-3/4">
 							<div class="single-footer">
 								<h2>About Us</h2>
 								<p>At the heart of our mission lies a commitment to reinvent healthcare through cutting-edge Healthtech solutions.</p>
@@ -20,10 +20,10 @@
 								<!-- End Social -->
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-12">
+						<div class="w-3/4">
 							<div class="single-footer f-link">
 								<h2>Quick Links</h2>
-								<div class="row">
+								<div class="flex justify-between">
 									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
 											<li><a href="/"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
@@ -45,7 +45,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-12">
+						<div class="w-3/4">
 							<div class="single-footer">
 								<h2>Open Hours</h2>
                                 <p>We are always ready for your health. <br>Receive our friendly service.</p>
@@ -56,7 +56,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-12">
+						<div class="w-3/4">
 							<div class="single-footer">
 								<h2>Newsletter</h2>
 								<p>Subscribe to our newsletter to get allour news in your inbox.. <br>Caring for patients is very important.</p>
@@ -73,8 +73,8 @@
 			<!--/ End Footer Top -->
 			<!-- Copyright -->
 			<div class="copyright">
-				<div class="container">
-					<div class="row">
+				<div class="w-[100%]">
+					<div class="flex justify-center items-center">
 						<div class="col-lg-12 col-md-12 col-12">
 							<div class="copyright-content">
 								<p>© Copyright 2023 &nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved by XXXXXX</p>
@@ -116,7 +116,7 @@
         </div>
 
         <!-- Video Call Modal -->
-        <div class="modal fade call-modal" id="video_call">
+        <div class="modal hidden fade call-modal" id="video_call">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
